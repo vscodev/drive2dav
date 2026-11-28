@@ -1,0 +1,50 @@
+name: Bug Report
+description: Submit a bug encountered while using Drive2dav
+labels: [bug]
+body:
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Issue Description
+      description: What problem occurred? What is the expected normal behavior?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Reproduction Steps
+      description: Please list the steps to reproduce the problem.
+    validations:
+      required: true
+
+  - type: input
+    id: drive2dav-version
+    attributes:
+      label: Drive2dav Version
+      description: Please make sure you are using the latest version of Drive2dav, otherwise your issue will be closed as invalid.
+      placeholder: 0.1.0
+    validations:
+      required: true
+
+  - type: input
+    id: storage-driver
+    attributes:
+      label: Storage Driver Used
+      placeholder: OneDrive
+    validations:
+      required: true
+
+  - type: input
+    id: system-environment
+    attributes:
+      label: Operating System and Browser Information
+      placeholder: Windows 11 Chrome 142.0.7444.176
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Error logs/screenshots/related configurations...
